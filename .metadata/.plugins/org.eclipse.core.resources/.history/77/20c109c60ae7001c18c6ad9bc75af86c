@@ -1,0 +1,10 @@
+package com.motivity;
+
+public class ArrayStoreExceptionExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

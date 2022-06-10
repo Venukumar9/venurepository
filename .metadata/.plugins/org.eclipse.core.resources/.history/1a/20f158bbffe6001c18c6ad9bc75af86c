@@ -1,0 +1,25 @@
+package collections.motivity;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class LinkedhashSetExample {
+
+	public static void main(String[] args) {
+		List<String> l= new ArrayList<>();
+		l.add("venu");
+		l.add("satya");
+		l.add("hari");
+		l.add("sai");
+		l.add("nikhil");
+		l.add("sai");
+		l.add(null);
+		System.out.println(l);
+		
+		System.out.println("to find the element at a particular index: "+l.get(2));
+		System.out.println("to find the class for a given object : "+l.getClass());
+		System.out.println("lastindexof used to find if there is a repeated values in list it is used to find the last value index : "+l.lastIndexOf("sai"));
+        System.out.println(l.listIterator(l));
+	}
+
+}

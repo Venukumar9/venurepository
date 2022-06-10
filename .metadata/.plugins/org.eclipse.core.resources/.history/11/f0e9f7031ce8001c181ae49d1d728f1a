@@ -1,0 +1,22 @@
+package collections.motivity;
+
+import java.util.HashMap;
+
+public class MapExample {
+
+	public static void main(String[] args) {
+		HashMap<Integer, String> hm = new HashMap<Integer, String>();
+		hm.put(5, "navin");
+		hm.put(5, "bunty");
+		hm.put(5, "chanti");
+		hm.put(5, "john");
+		hm.put(5, "pavan");
+		hm.put(5, "Ram");
+		hm.put(5, "gopy");
+		System.out.println(hm);
+		
+		
+
+	}
+
+}

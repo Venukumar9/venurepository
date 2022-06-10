@@ -1,0 +1,36 @@
+package collections.motivity;
+
+import java.util.HashSet;
+
+public class MethodsInCollectionFramework {
+
+	public static void main(String[] args) {
+		HashSet<Integer> set = new HashSet<Integer>();
+		set.add(100);
+		set.add(120);
+		set.add(130);
+		set.add(150);
+		set.add(160);
+		set.add(100);
+		set.add(130);
+		set.add(200);
+		System.out.println("adding elements....");
+		System.out.println(set);
+		HashSet<Integer> hs2 = new HashSet<>();
+		
+		hs2.add(12);
+		hs2.add(2120);
+		hs2.add(101);
+		set.addAll(hs2);//to add new elements to existing class and print all the elements
+		System.out.println("add new elements to existing object and print both the elements");
+		System.out.println(set);
+		set.clear();//to clear all the elements 
+		System.out.println(set);//to clear all the elements
+		hs2.contains(12);
+		System.out.println(hs2);
+		
+		
+
+	}
+
+}

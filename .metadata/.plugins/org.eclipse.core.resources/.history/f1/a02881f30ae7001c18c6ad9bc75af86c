@@ -1,0 +1,12 @@
+package com.motivity;
+
+public class ArrayStoreExceptionExample {
+
+	public static void main(String[] args) {
+		Object [] stringArr = new String[5];
+		
+         stringArr[0]="hello";
+         System.out.println(stringArr[0]);
+	}
+
+}

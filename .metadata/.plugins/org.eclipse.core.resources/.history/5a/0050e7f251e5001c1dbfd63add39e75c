@@ -1,0 +1,5 @@
+package com.hotels.pvt;
+
+public interface Hotels {
+
+}

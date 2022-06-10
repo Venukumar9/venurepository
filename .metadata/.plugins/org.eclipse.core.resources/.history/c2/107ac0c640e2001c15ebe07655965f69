@@ -1,0 +1,5 @@
+package com.animal.org;
+
+public abstract class Animal {
+
+}

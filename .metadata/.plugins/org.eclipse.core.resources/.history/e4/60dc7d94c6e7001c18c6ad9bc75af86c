@@ -1,0 +1,10 @@
+package snippet;
+
+public class Snippet {
+	Class.forName("com.mysql.cj.jdbc.Driver");
+	String url ="jdbc:mysql://localhost/3306/motivity";
+	String username="root";
+	String password="localhost";
+	Connection connection =   (Connection) DriverManager.getConnection(url, username, password);
+}
+

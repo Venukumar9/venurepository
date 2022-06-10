@@ -1,0 +1,20 @@
+package com.motivity;
+
+public class CastClassExample {
+
+	public static void main(String[] args) {
+	
+			Object monthnumber = new Integer(12);
+			System.out.println("how to handle classcasting exception");
+			try {
+			char a = (Character) monthnumber;
+			System.out.println(a);
+			
+			}
+			catch(ClassCastException e) {
+				
+			}
+
+	}
+
+}

@@ -1,0 +1,31 @@
+package com.constructor.org;
+abstract class Hotel {
+	public String hotellocation;
+
+	abstract void menu();
+}
+class Novotel extends Hotel {
+	String hotelLocation;
+	public Novotel(String string, String string2) {
+		// TODO Auto-generated constructor stub
+	}
+	public void Novotel(String hotellocation ,String mainlocation) {
+		super.hotellocation =hotelLocation;
+		this.hotelLocation=mainlocation;
+		
+	}
+	
+	void menu() {
+		System.out.println("1.dosa , 2.idly , 3.bonda");
+	}
+}
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       Novotel hotel = new Novotel("hyderabad" ,"mumbai");
+       System.out.println(hotel.toString());
+       hotel.menu();
+	}
+
+}

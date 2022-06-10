@@ -1,0 +1,19 @@
+package collections.motivity;
+
+import java.util.HashSet;
+
+public class MethodsInCollectionFramework {
+
+	public static void main(String[] args) {
+		HashSet<Integer> set = new HashSet<Integer>();
+		set.add(100);
+		set.add(120);
+		set.add(130);
+		set.add(150);
+		set.add(160);
+		System.out.println(set);
+		
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.motivity;
+class Hotel {
+	
+}
+
+public class ClassCastException {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

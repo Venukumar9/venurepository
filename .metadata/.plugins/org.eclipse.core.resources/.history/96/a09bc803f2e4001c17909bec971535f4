@@ -1,0 +1,34 @@
+package com.constructor.org;
+class Hotel{
+	public String Location;
+
+	Hotel(){
+		
+		
+	}
+	
+}
+class Lemontree extends Hotel{
+	private String mainLocation;
+
+	Lemontree(String Location ,String mainLocation){
+		super.Location=Location;
+		this.mainLocation=mainLocation;
+		System.out.println("the location of hotel is : "+Location);
+		System.out.println("the main location of Hotel is : "+mainLocation);
+		
+	}
+
+
+}
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Lemontree hotel = new Lemontree("hyderabad", "mumbai");
+		
+
+	}
+
+}

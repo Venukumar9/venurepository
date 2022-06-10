@@ -1,0 +1,10 @@
+package com.connection.com;
+
+public class JbceSqlConnection {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

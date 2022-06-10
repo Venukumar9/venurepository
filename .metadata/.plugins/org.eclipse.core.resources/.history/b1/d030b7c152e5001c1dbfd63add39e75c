@@ -1,0 +1,15 @@
+package com.hotels.pvt;
+
+public interface Hotels 
+{
+	public void typeOfHotel();
+	public void Services();
+}
+abstract Kohinoor implements Hotels
+{
+	public String loc ;
+	
+	abstract Kohinoor(String loc);
+	
+	
+}

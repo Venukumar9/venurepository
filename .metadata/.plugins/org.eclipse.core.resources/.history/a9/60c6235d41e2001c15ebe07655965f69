@@ -1,0 +1,24 @@
+package com.animal.org;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+         Animal animal =  new Dog();
+         animal.lifeSpan();
+         
+         animal = new Cat();
+         animal.lifeSpan();
+                 
+         animal = new Lion();
+         animal.lifeSpan();
+               
+         animal = new Tiger();
+         animal.lifeSpan();
+                
+          animal = new Deer();
+         animal.lifeSpan();
+                 animal.breath();
+	}
+
+}

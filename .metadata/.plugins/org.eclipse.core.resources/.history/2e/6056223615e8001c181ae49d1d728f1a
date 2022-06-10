@@ -1,0 +1,36 @@
+package collections.motivity;
+
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class TreeSetExample {
+
+	public static void main(String[] args) {
+	
+		TreeSet<Integer> t = new TreeSet<Integer>();
+		t.add(2);
+		t.add(10);
+		t.add(21);
+		t.add(7);
+		t.add(22);
+		t.add(24);
+		System.out.println(t);
+		for(int k:t) {
+			System.out.println(k);
+		}
+		Iterator<Integer> a = t.iterator();
+		while(a.hasNext()) {
+			System.out.println(a.next());
+		}
+		TreeSet<Integer> head_set = (TreeSet<Integer>) new TreeSet<Integer>().headSet(21);
+		System.out.println(head_set);
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

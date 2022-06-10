@@ -1,0 +1,15 @@
+package com.automobile.vechile;
+
+import twowheeler.Hero;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Hero h = new Hero();
+		h.getSpeed();
+		Honda h1 = new Honda();
+		h1.getSpeed();
+
+	}
+
+}
