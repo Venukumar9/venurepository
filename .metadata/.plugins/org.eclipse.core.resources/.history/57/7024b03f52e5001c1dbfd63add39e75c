@@ -1,8 +1,0 @@
-package com.hotels.pvt;
-
-public interface Hotels 
-{
-	public void type();
-	
-
-}
