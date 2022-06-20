@@ -1,2 +1,4 @@
+browser-choice=1
+browsers=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<web-browsers current\="1">\r\n<system/>\r\n<external location\="C\:\\Program Files\\Internet Explorer\\iexplore.exe" name\="Internet Explorer"/>\r\n</web-browsers>
 eclipse.preferences.version=1
-internalWebBrowserHistory=https\://www.eclipse.org/setups/donate/?scope\=Eclipse%20IDE%20for%20Enterprise%20Java%20Developers%20(includes%20Incubating%20components)&version\=4.18.0.20201210-1200&campaign\=2022-03|*|
+internalWebBrowserHistory=http\://localhost\:8097/server2/|*|http\://localhost\:8097/Servlets1/|*|https\://www.eclipse.org/setups/donate/?scope\=Eclipse%20IDE%20for%20Enterprise%20Java%20Developers%20(includes%20Incubating%20components)&version\=4.18.0.20201210-1200&campaign\=2022-03|*|
