@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+</head>
+<body bgcolor="grey">
+	<form action="LeaveApplication" method="post">
+	
+	<center>
+	
+	<h1> Leave Application Form</h1>
+	
+	<table>
+	
+	<tr>
+	
+	<td>employee Name</td>
+	
+	<td><input type="text" name="ename" required/></td>
+	
+	</tr>
+	
+	<tr>
+	
+	<td>Employee Id</td>
+	
+	<td><input type="text" name="empid" title="Please Enter 5 Digit" required/></td>
+	
+	</tr>
+	
+	<tr>
+	
+	<td>Degisnation</td>
+	
+	<td><input type="text" name="degisnation" required/></td>
+	
+	</tr>
+	<tr>
+	
+	<td>From</td>
+	
+	<td><input type="date" name="fromdate"  required/></td>
+	
+	</tr>
+	
+	<tr>
+	
+	<td>To</td>
+	
+	<td><input type="date" name="todate" required/></td>
+	<td><p id ="days"><p>
+	
+	</tr>
+	
+	<tr>
+	
+	<td>Reason</td>
+	
+	<td>
+	
+	<textarea name="reason" cols="15" rows="5" required></textarea>
+	
+	</td>
+	
+	</tr>
+	
+	<tr>
+	
+	<td>Manager Name</td>
+	
+	<td><input type="text" name="mname" required/></td>
+	
+	</tr>
+	
+	<tr>
+	
+	<td></td>
+	
+	<td><input type="submit" value="Submit">
+	
+	<input type="reset">
+	
+	</td>
+	</tr>
+	</table>
+	</center>
+	</form>
+	<script>
+function countdays(){
+var fd = document.getElementById("fromdate").value;
+var td = document.getElementById("todate").value;
+var d1 = new Date(fd);
+var d2 = new Date(td);
+var timediff = d2.getTime()-d1.getTime();
+var result = timediff/(60000*60*24);
+result = result+1;
+return document.getElementById("days").innerHTML = result;
+}
+</script>
+</body>
+</html>

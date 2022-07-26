@@ -13,6 +13,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.mysql.cj.protocol.Resultset;
 @WebServlet("/EmployeeLogin")
@@ -42,7 +43,9 @@ public class EmployeeLogin extends HttpServlet{
 				ps.setString(2, email);
 				ResultSet rs=ps.executeQuery();
 				PrintWriter pw=response.getWriter();
+				HttpSession s = request.getSession();
 				if(rs.next()) {
+					s.setAttribute(ename, rs.getString("ename"));
 					response.sendRedirect("./employeeHomepage.html");
 				}
 				else {

@@ -1,4 +1,5 @@
-package com.organisation;
+
+ package com.organisation;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -32,21 +33,15 @@ public class ManagerApprovel extends HttpServlet{
 	
 			try {
 				
-				int totalleaves=Integer.parseInt(request.getParameter("totalleaves"));
-				int leavesperMonth=Integer.parseInt(request.getParameter("perMonth"));
-				int pending=Integer.parseInt(request.getParameter("pendingLeaves"));
-				int usedleaves=Integer.parseInt(request.getParameter("usedleaves"));
-				String status= request.getParameter("status");
-		
+				String mname=request.getParameter("Mname");
+				
 				
 		
-				ps=connect.prepareStatement("select * from leaves where totalLeaves <=? and leavesperMonth <=? and pendingleaves <=? and leaveUsedInMonth<=? and status=?");
+				ps=connect.prepareStatement("select * from manager where Mname=?");
 	            
-				ps.setInt(1, totalleaves);
-				ps.setInt(2, leavesperMonth );
-				ps.setInt(3, pending);
-				ps.setInt(4, usedleaves);
-				ps.setString(5, status);
+			
+				ps.setString(1, mname);
+				
 				ResultSet rs=ps.executeQuery();
 				PrintWriter pw=response.getWriter();
 				if(rs.next()) {

@@ -13,6 +13,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 @WebServlet("/GuestLogin")
 public class GuestLogin extends HttpServlet{
 
@@ -37,8 +38,10 @@ public class GuestLogin extends HttpServlet{
 			ps.setString(2,name);
 			
 			ResultSet rs1=ps.executeQuery();
-			PrintWriter pw1 = response.getWriter();
+			//PrintWriter pw1 = response.getWriter();
+			//HttpSession session=request.getSession();
 			if(rs1.next()) {
+				//session.setAttribute("gid", rs1.getInt(1));
 				response.sendRedirect("./guestHome.html");
 			
 			}

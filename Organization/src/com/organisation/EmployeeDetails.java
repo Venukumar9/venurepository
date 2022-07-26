@@ -30,7 +30,8 @@ public class EmployeeDetails extends HttpServlet {
 		protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 			try {
-			
+		
+				
 			String ename=request.getParameter("ename");
 			String email=request.getParameter("email");
 		

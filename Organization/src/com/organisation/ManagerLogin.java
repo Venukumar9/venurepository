@@ -13,6 +13,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 @WebServlet("/ManagerLogin")
 public class ManagerLogin extends HttpServlet{
 
@@ -33,6 +34,7 @@ public class ManagerLogin extends HttpServlet{
 				
 				String Mname=request.getParameter("Mname");
 				String email=request.getParameter("email");
+				HttpSession session = request.getSession();
 				
 				ps=connect.prepareStatement(" select * from manager where Mname=? and email=?");
 	            
@@ -41,7 +43,8 @@ public class ManagerLogin extends HttpServlet{
 				ResultSet rs=ps.executeQuery();
 				PrintWriter pw=response.getWriter();
 				if(rs.next()) {
-					response.sendRedirect("./managerApprovel.html");
+					session.setAttribute("Mname",Mname );
+					response.sendRedirect("./managerhome.html");
 				}
 				else {
 				   response.sendRedirect("./managerLogin.html");
